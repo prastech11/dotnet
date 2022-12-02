@@ -12,8 +12,8 @@ pipeline {
 
     stage('Copyfilesfrom S3') {
       steps {
-        s3Download(file: 'deployment.yaml', bucket: 's3://sam-bucket-jnks')
-        s3Download(file: 'service.yaml', bucket: 's3://sam-bucket-jnks')
+        s3Download(file: 'deployment.yaml', bucket: 'sam-bucket-jnks')
+        s3Download(file: 'service.yaml', bucket: 'sam-bucket-jnks')
       }
     }
 
